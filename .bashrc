@@ -5,10 +5,13 @@ export CXX=g++
 export EDITOR=nano
 
 export GOPATH=~/Code/Go
-export GOROOT=/usr/lib/go
-export GEMS=~/.gem/ruby/2.3.0/bin
 export PATH=$PATH:$GOPATH/bin
+
+export GOROOT=/usr/lib/go
+
+export GEMS=~/.gem/ruby/2.3.0/bin
 export PATH=$PATH:$GEMS
+
 export PATH=$PATH:~/Code/pyutils
 
 alias cmaked='cmake -DCMAKE_BUILD_TYPE=Debug'
