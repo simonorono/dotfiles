@@ -168,6 +168,7 @@ exec --no-startup-id pa-applet
 exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/162.png
 exec --no-startup-id setxkbmap -option compose:lwin
 exec --no-startup-id compton --config ~/.compton -b
+exec --no-startup-id xfce4-power-manager
 
 #Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
