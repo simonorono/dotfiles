@@ -165,10 +165,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i
 #Auto start apps
 exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/162.png
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/047.jpg
 exec --no-startup-id setxkbmap -option compose:lwin
 exec --no-startup-id compton --config ~/.compton -b
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon
 
 #Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
