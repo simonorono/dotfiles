@@ -1,5 +1,7 @@
 # shopt -s autocd
 
+export SIMON=/home/simon
+
 export CC=gcc
 export CXX=g++
 export EDITOR=nano
@@ -12,6 +14,7 @@ export PATH=$PATH:$GEMS
 
 export PATH=$PATH:$SIMON/.config/composer/vendor/bin
 export PATH=$PATH:$SIMON/Code/pyutils
+export PATH=$PATH:$SIMON/Programs/IntelliJIDEALicenseServer
 
 alias cmaked='cmake -DCMAKE_BUILD_TYPE=Debug'
 alias cmaker='cmake -DCMAKE_BUILD_TYPE=Release'

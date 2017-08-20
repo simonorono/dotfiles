@@ -6,7 +6,7 @@ font pango:Fantasque Sans Mono Regular 8
 floating_modifier $mod
 
 # start a terminal
-bindsym Ctrl+$mod+t exec --no-startup-id gnome-terminal
+bindsym Ctrl+$mod+t exec --no-startup-id mate-terminal
 
 # refresh monitor setup
  bindsym $mod+m exec --no-startup-id xrandr --output HDMI1 --auto
@@ -131,7 +131,7 @@ bindsym $mod+r mode "resize"
 #My configurations start here
 
 bar {
-  status_command i3status -c ~/.i3/status.conf
+  status_command i3status -c ~/.config/i3/status.conf
   workspace_buttons yes
 
   # $i3-theme-bar
@@ -148,10 +148,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i
 
 #Auto start apps
 exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/003.jpg
+exec --no-startup-id pa-applet --disable-notifications
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/001.jpg
 exec --no-startup-id setxkbmap -option compose:lwin
-exec --no-startup-id xfsettingsd
+exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon
 exec --no-startup-id comptom
 
 #Media keys
@@ -161,6 +161,6 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 #Lock screen
-bindsym Mod1+l exec --no-startup-id sh ~/.i3/i3lck.sh
+bindsym Mod1+l exec --no-startup-id sh ~/.config/i3/i3lck.sh
 
 
