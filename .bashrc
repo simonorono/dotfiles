@@ -19,6 +19,9 @@ export PATH=$PATH:$SIMON/Programs/IntelliJIDEALicenseServer
 alias cmaked='cmake -DCMAKE_BUILD_TYPE=Debug'
 alias cmaker='cmake -DCMAKE_BUILD_TYPE=Release'
 alias resetpulse='pulseaudio -k && pulseaudio --start'
+alias start_i3='SESSION=i3 startx'
+alias start_ob='SESSION=openbox-session startx'
+alias start_xf='SESSION=startxfce4 startx'
 
 # prompt
 PS1='[\u@\h \W]\$ '

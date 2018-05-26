@@ -6,7 +6,7 @@ font pango:Fantasque Sans Mono Regular 8
 floating_modifier $mod
 
 # start a terminal
-bindsym Ctrl+$mod+t exec --no-startup-id mate-terminal
+bindsym Ctrl+$mod+t exec --no-startup-id xfce4-terminal
 
 # refresh monitor setup
  bindsym $mod+m exec --no-startup-id xrandr --output HDMI1 --auto
@@ -144,15 +144,18 @@ new_window normal 1
 new_float normal
 hide_edge_borders both
 focus_follows_mouse no
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #Auto start apps
 exec --no-startup-id nm-applet
-exec --no-startup-id pa-applet --disable-notifications
-exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/001.jpg
+exec --no-startup-id pa-applet
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/162.png
 exec --no-startup-id setxkbmap -option compose:lwin
-exec --no-startup-id /usr/lib/mate-settings-daemon/mate-settings-daemon
-exec --no-startup-id comptom
+exec --no-startup-id xfsettingsd
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id compton
+exec --no-startup-id dropbox
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 #Media keys
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
