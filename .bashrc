@@ -1,9 +1,9 @@
 # shopt -s autocd
 
-export SIMON=/home/simon
+export SIMON=/home/simonorono
 
-export CC=gcc
-export CXX=g++
+export CC=clang
+export CXX=clang++
 export EDITOR=nano
 
 export GOPATH=$SIMON/Code/Go
