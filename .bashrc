@@ -2,7 +2,7 @@
 
 export SIMON=/home/simonorono
 
-export EDITOR=vim
+export EDITOR=nano
 
 export GOPATH=$SIMON/Code/Go
 export PATH=$PATH:$GOPATH/bin
